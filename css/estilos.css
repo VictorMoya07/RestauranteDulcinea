@@ -1,0 +1,406 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Open Sans",Arial,sans serif;
+}
+
+.contenedor{
+	width:90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+
+/*--------------------------HEADER-------------------------*/
+
+header{
+	width: 100%;
+	background:url(../images/bg3.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	background-position:center 0; 
+
+}
+
+header .contenedor{
+	position: relative;
+	height: 700px;
+}
+
+header .menu{
+	width: 100%;
+	text-align: right;
+}
+
+header .menu a{
+	color:#fff;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+	margin:20px 20px;
+	position: relative;
+}
+
+header .menu a:hover{
+	color:#FACC2E;
+	font-weight: 700;
+}
+
+header .textos {
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top:50%;
+	margin-top: -52px;
+}
+
+header .textos .texto-titulo{
+	font-size: 60px;
+	font-weight:600 ;
+	color:#FACC2E;
+
+}
+
+header .textos .texto-titulo span{
+	font-weight: 300;
+}
+
+header .textos h3{
+	font-weight: 600;
+	font-size: 25px;
+	font-style: italic;
+	color:#fff; 
+}
+
+/*---------------------Acerca de --------------------*/
+
+.main{
+	background:url("../images/bg.textura2.png");
+	background-repeat: repeat;
+}
+
+.main .acerca-de .contenedor{
+	overflow: visible;
+	position: relative;
+
+}
+
+
+.main .acerca-de .foto{
+	width: 80%;
+	position: absolute;
+	left:0;
+	top:-50px;
+	z-index: 0;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+
+.main .acerca-de .foto img{
+	vertical-align: top;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.main .acerca-de article{
+	background:#fff;
+	padding:30px;
+	width:40%;
+	position: relative;
+	top:300px;
+	z-index: 1;
+	float:right;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+	border-radius: 5px;
+	right: 150px;
+	
+}
+
+.main .acerca-de article h3{
+	font-size: 50px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.main .acerca-de article p{
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+/*-----------------------------------MENU--------------------------*/
+
+.main .menucomida{
+	padding-top: 570px;
+	margin-bottom: 50px;
+}
+
+.main .menucomida .titulo{
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 40px;
+
+
+
+}
+
+.main .menucomida .contenedor-menu{
+
+	border:1px solid ;
+	background: transparent;
+	padding: 10px;
+	overflow: hidden;
+}
+
+
+.main .menucomida .contenedor-menu2{
+	border:1px solid ;
+	background:url(../images/bg-textura.png);
+	padding: 10px;
+	overflow: hidden;
+}
+
+.main .menucomida article{
+	width:50%;
+	float: left;
+	padding:20px;
+}
+
+.main .menucomida .categoria{
+	font-size: 22px;
+	font-weight:700;
+	margin-bottom: 40px;
+	text-align: center; 
+}
+
+.main .menucomida .platillo{
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 4px dotted #000;
+	overflow: hidden; 
+}
+
+.main .menucomida .nombre{
+	font-size: 20px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+.main .menucomida .precio{
+	font-size: 20px;
+	margin-bottom: 15px;
+	float: right;
+}
+
+.main .menucomida .descripcion{
+	font-size: 16px;
+	color:#676767;
+	clear:both;
+}
+
+/*---------------------Galeria de Platillos-----------------*/
+
+
+.main .galeria{
+	overflow: hidden;
+}
+
+.main .galeria .foto{
+	width:25%;
+	float:left;
+}
+
+.main .galeria .foto img{
+	width:100%;
+	height: 100%;
+	vertical-align: top;
+	opacity: .7;
+}
+
+.main .galeria .foto img:hover{
+	opacity: 1;
+	-transition: all .3s ease;
+}
+
+/*----------------------Ubicacion---------------------------*/
+.main .ubicacion{
+	
+	padding: 60px 0;
+	overflow: hidden;
+	color:#FFF;
+}
+
+/*.main .ubicacion .contenedor{
+	border:1px dashed orange;
+	border-radius: 10px;
+}*/
+
+
+
+.main .ubicacion .titulo{
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.main .ubicacion .direccion{
+	float: left;
+	width:50%;
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.main .ubicacion .horarios{
+	float: right;
+	width:50%;
+	text-align: right;
+}
+
+.main .ubicacion .direccion .calle{
+	margin-bottom: 15px;
+}
+
+.main .ubicacion .horarios h4{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main .ubicacion .horarios .entre-semana{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main .mapa{
+	width: 100%;
+	overflow: hidden;
+	
+	
+}
+
+.main .mapa iframe{
+	width: 100%;
+}
+
+/*-----------------------------footer---------------*/
+footer{
+	background: #000;
+
+}
+
+footer .copyright{
+	text-align: center;
+	padding: 15px 0;
+	color:#fff;
+}
+
+/*------------------------------MEDIAS QUERYS---------------------------*/
+
+@media screen and (max-width:800px){
+	header .contenedor{
+		position:static;
+		height: auto;
+	}
+
+	header .textos{
+		position:static;
+		margin:100px 0;
+	}
+
+	header .menu {
+		text-align: center;
+	}
+
+	header .menu a{
+		margin:10px 20px;
+	}
+
+	header .textos .texto-titulo{
+		font-size:35px;
+	}
+
+	header .textos h3{
+		font-size: 15px;
+	}
+
+
+	/*--------------------------main------------------*/
+
+	.main .acerca-de .foto{
+		width: 100%;
+		position:relative;
+	}
+	
+
+	.main .acerca-de article{
+		position: relative;
+		width:100%;
+		top:-50px;
+		transform: translate(0px , 0);
+		right: 0;
+		
+	}
+
+	.main .acerca-de article h3{
+		font-size: 40px;
+	
+	}
+
+	.main .menucomida {
+		padding-top:300px; 
+	}
+
+	.main .contenedor-menu2 article{
+		width:100%;
+	}
+
+	.main .galeria .foto{
+	width:50%;
+	float:left;
+	}	
+
+	.main .galeria .foto img{
+	width:100%;
+	height: 100%;
+	vertical-align: top;
+	opacity: .7;
+	margin:auto;
+	}
+
+	.main .mapa{
+		width:100%;
+		margin:auto;
+	}
+}
+	@media screen and (max-width: 400px){
+		.main .acerca-de article h3{
+			font-size: 34px;
+			margin-bottom: 10px;
+		}
+
+		.main .menu article .nombre,
+		.main .menu article .precio{
+			font-size:16px;
+			line-height: 16px;
+		}
+
+		.main .ubicacion .direccion{
+			margin-bottom: 15px;
+		}
+
+		.main .ubicacion .direccion,
+		.main .ubicacion .horarios{
+			width: 100%;
+			text-align: center;
+		}
+
+
+	}
